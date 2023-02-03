@@ -1,0 +1,56 @@
+
+section {display: flex;}
+article {display: inline-flex;}
+
+#main {
+    min-height: 800px;
+    /*creamos el flex container:*/
+    display: flex;
+    /*Cómo se disponen los items:*/
+    flex-flow: row;
+    /*row= el eje principal coincide con la dirección
+      del texto. En español horizontal (eje Y) de Izq a drcha*/
+   }
+  #main > article {
+   
+    background-color: blue;
+    flex: 3 1 60%;
+    /*3= flex-grow = factor de crecimiento//
+    1= flex-shrink = factor de contracción //
+    60%= flex-basis = el espacio del container
+    que ocupará el item*/
+    order: 2;
+    /*2= se dibujará en segundo lugar,
+    tras el item que tenga un valor de 1*/
+   }
+  #main > nav {
+    border: 3px solid white;
+    border-color: black;
+    background-color: aqua;
+    flex: 1 6 20%;
+    order: 1;
+   }
+  #main > aside {
+    border: 3px solid white;
+    border-color: black;
+    background-color: blueviolet;
+    flex: 1 6 20%;
+    order: 3;
+   }
+
+@media all and (max-width: 540px) {  
+   #main, #page {
+     flex-flow: column;
+   /*cambiamos de filas a columnas*/
+   }
+ 
+   #main > article, #main > nav, #main > aside {
+    /* Restablecemos el orden */
+      order: 0;
+   }   
+   #main > nav, #main > aside, header, footer {
+    /*Fijamos alturas*/
+    min-height: 50px;
+    max-height: 50px;
+   }
+ }

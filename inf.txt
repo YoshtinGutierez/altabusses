@@ -1,0 +1,49 @@
+        <center>
+        <div id='perfil'>
+            <div>
+            <h2>Perfil</h2>
+            <img src={Logo} alt="lo de la empresa" />
+            </div>
+            <div id='info'>
+                <h4>Business developer con más de 5 años de experiencia en el sector tecnológico. Actualmente soy parte de un equipo de ventas a nivel internacional y he logrado superar mis metas mensuales en 4 ocasiones consecutivas. Deseo aplicar mis conocimientos del negocio y mis habilidades de negociación para ayudar a incrementar los ingresos de la empresa</h4>
+            </div> 
+        </div>
+        <div id='habilidades'>
+        <div>
+            <h2>Habilidades</h2>
+            <img src={Logo} alt="lo de la empresa" />
+            </div>
+            <div id='info'>
+                <h4>Business developer con más de 5 años de experiencia en el sector tecnológico. Actualmente soy parte de un equipo de ventas a nivel internacional y he logrado superar mis metas mensuales en 4 ocasiones consecutivas. Deseo aplicar mis conocimientos del negocio y mis habilidades de negociación para ayudar a incrementar los ingresos de la empresa</h4>
+            </div> 
+        </div>
+        </center>
+***********************
+css
+//////
+
+#perfil{
+    
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(220.55deg, #FFF500 0%, #FF00B8 100%);
+    
+}
+#habilidades{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(220.55deg, #FFF500 0%, #FF00B8 100%);
+
+}
+#info{
+    width: 50%;
+    border: 3px solid rgb(44, 40, 40);
+}
+img{
+    height: 150px;
+}
+
+phbf353joh
+sakurasao1234

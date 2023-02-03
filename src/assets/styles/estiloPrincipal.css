@@ -1,0 +1,12 @@
+#titulo{
+    border: 3px solid white;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(220.55deg, #FF3F3F 0%, #063CFF 100%);
+    border-color: orange;
+
+}
+img{
+    height: 150px;
+}

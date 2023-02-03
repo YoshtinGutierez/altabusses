@@ -1,0 +1,7 @@
+
+#contenedor{
+    width:1000px;
+    height:1240px;
+    box-shadow: .5rem .5rem 1rem #ccc, -.5rem -.5rem 1rem #ccc;
+    font-size: 25px;
+}
